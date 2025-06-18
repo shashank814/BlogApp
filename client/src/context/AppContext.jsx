@@ -58,6 +58,8 @@ const axiosInstance = axios.create({
   baseURL: import.meta.env.VITE_BASE_URL,
 });
 
+console.log("Backend Base URL:", import.meta.env.VITE_BASE_URL);
+
 // ✅ Interceptor to attach token
 axiosInstance.interceptors.request.use(
   (config) => {
